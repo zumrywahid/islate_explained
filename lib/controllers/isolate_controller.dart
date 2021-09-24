@@ -33,7 +33,6 @@ class IsolateController extends ChangeNotifier {
   }
 
   void listen() {
-    _receivePort.close();
     _receivePort.listen((dynamic message) {
       print("message listen " + message.runtimeType.toString());
       if (message is SendPort) {
@@ -50,8 +49,8 @@ class IsolateController extends ChangeNotifier {
     if (_isPaused) {
       return Future.value(null);
     }
-    await createIsolate();
     listen();
+    await createIsolate();
     _isCreated = true;
     _isPaused = false;
     notifyListeners();
@@ -100,7 +99,7 @@ Future<void> multiplyNumber(SendPort callerSP) async {
     });
 
     double sum = 1;
-    for (int x = 0; x < 1000; x++) {
+    for (int x = 0; x < 10000; x++) {
       sum += await getRandom();
     }
 
