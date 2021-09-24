@@ -1,4 +1,4 @@
-# Islate Explained
+# Isolate Explained
 
 An explanation for Flutter Isolate functionality
 
