@@ -1,7 +1,5 @@
 # Islate Explained
 
-![Screenshot](screen.png){ width=50% }
-
 An explanation for Flutter Isolate functionality
 
 ## Isolate is a crucial feature in the dart language.
@@ -13,3 +11,4 @@ I implemeted a small flutter app to tech you how to implement Isolate usign Prov
 
 Please check my blog for more info. 
 
+![Screenshot](screen.png)
