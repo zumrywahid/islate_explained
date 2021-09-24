@@ -1,6 +1,6 @@
 # Islate Explained
 
-![Screenshot](screen.png)
+![Screenshot](screen.png){width=500px}
 
 An explanation for Flutter Isolate functionality
 
